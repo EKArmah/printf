@@ -102,6 +102,7 @@ int _printf(const char *format, ...)
 	}
 
 	/*printf("Final count: %d\n", final_counter);*/
+	va_end(print_specs);
 	return (final_counter);
 }
 
