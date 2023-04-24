@@ -15,18 +15,12 @@ int (*get_app_type_print(char frms))(va_list print_spec)
 	get_type type_ls[] = {
 		{"c", print_char},
 		{"s", print_str},
-		{"%", print_mod},
-		{NULL, print_NULL}};
+		{"%", print_mod}};
 
-	while (type_count < 4)
+	while (type_count < 3)
 	{
 		temp = type_ls[type_count].frm;
 
-		if (frms == 0)
-		{
-			printf("Ok NULL case recognized\n");
-			return (type_ls[3].f);
-		}
 		if (frms == *temp)
 		{
 			return (type_ls[type_count].f);
@@ -63,7 +57,9 @@ int buffer_count_retr(va_list print_spec, char forms)
 	}
 	if (!strchr(spec_list, forms))
 	{
-		return (0);
+		putchar('%');
+		putchar(forms);
+		return (2);
 	}
 	str_count = get_app_type_print(forms)(print_spec);
 	return (str_count);

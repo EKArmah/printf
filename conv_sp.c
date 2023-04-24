@@ -74,6 +74,7 @@ int print_NULL(__attribute__((unused)) va_list arg)
 	char *temp = "(null)";
 	int count = 0;
 
+	printf("NULL case met");
 	while (temp[count] != '\0')
 	{
 		putchar(temp[count]);
