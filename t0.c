@@ -16,12 +16,17 @@ int (*get_app_type_print(char frms))(va_list print_spec)
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_mod},
-		{NULL, NULL}};
+		{NULL, print_NULL}};
 
-	while (type_count < 3)
+	while (type_count < 4)
 	{
 		temp = type_ls[type_count].frm;
 
+		if (frms == 0)
+		{
+			printf("Ok NULL case recognized\n");
+			return (type_ls[3].f);
+		}
 		if (frms == *temp)
 		{
 			return (type_ls[type_count].f);

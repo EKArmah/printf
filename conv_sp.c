@@ -33,6 +33,12 @@ int print_str(va_list arg)
 	temp_str = va_arg(arg, char *);
 	if (temp_str == NULL)
 	{
+		temp_str = "(null)";
+		while (temp_str[count] != '\0')
+		{
+			putchar(temp_str[count]);
+			count++;
+		}
 		return (0);
 	}
 	while (temp_str[count] != '\0')
@@ -56,3 +62,21 @@ int print_mod(__attribute__((unused)) va_list arg)
 	return (1);
 }
 
+/**
+ * print_NULL - prints (null) when a NULL pointer is passed in var list
+ * @arg: va list
+ *
+ * Return: 0
+ */
+
+int print_NULL(__attribute__((unused)) va_list arg)
+{
+	char *temp = "(null)";
+	int count = 0;
+
+	while (temp[count] != '\0')
+	{
+		putchar(temp[count]);
+	}
+	return (0);
+}

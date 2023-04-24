@@ -25,7 +25,7 @@ int _printf(const char *format, ...);
 int print_str(va_list arg);
 int print_char(va_list arg);
 int print_mod(va_list arg);
-int print_nul(va_list arg);
+int print_NULL(va_list arg);
 int buffer_count_retr(va_list print_spec, char forms);
 
 #endif /*MAIN_H*/
