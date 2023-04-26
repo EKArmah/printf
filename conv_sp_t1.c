@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_int - prints an integer
- * @arg: va_list pointing to curr value
+ * print_int: prints an integer
+ * @arg: va_list pointing to current value
  *
- * Return: number of chars in int
+ * Return: number of chars of the integer
  */
 
 int print_int(va_list arg)

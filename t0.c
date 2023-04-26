@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_app_type_print - retrieve needed function for given spec char
+ * get_app_type_print: get the needed function for given spececified char
  * @frms: char for function call
  *
  * Return: pointer to needed function
@@ -35,9 +35,9 @@ int (*get_app_type_print(char frms))(va_list print_spec)
 }
 
 /**
- * buffer_count_retr - buffer function to retrieve cumulated char count
+ * buffer_count_retr - the buffer function to get the char count
  * @print_spec: va_list
- * @forms: current char specifier to be called
+ * @forms: current char specifier expected
  *
  * Return: final char count
  */
@@ -62,8 +62,8 @@ int buffer_count_retr(va_list print_spec, char forms)
 }
 
 /**
- * _printf - printf undetermined number and type of input to std out
- * @format: std str to print
+ * _printf - printf the unknown number and the type of input to standard output
+ * @format: standard string to print
  *
  * Return: number of characters printed
  */
