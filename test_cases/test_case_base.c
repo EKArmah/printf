@@ -41,6 +41,7 @@ int main(void)
     printf("Unknown:[%r]\n");*/
     /*_printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);*/
     /*printf("hello\n");*/
+    printf("%");
 	/*printf("%9d\n", -382323590);*/
 	/*_printf("%c%cth %s%s a%cg%s: Y%%ou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", ";", "know", 't', ", Jon", '\n');*/
     return (0);
