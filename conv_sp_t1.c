@@ -9,10 +9,11 @@
 
 int print_int(va_list arg)
 {
-	int temp, temp_cp, power, div, total_count, index = 1;
+	int temp, temp_cp, check_neg, power, div, total_count, index = 1;
 
 	temp = va_arg(arg, int);
 
+	check_neg = temp;
 	if (temp < 0)
 	{
 		putchar('-');
@@ -27,6 +28,11 @@ int print_int(va_list arg)
 		temp_cp = div  % 10;
 		putchar('0' + temp_cp);
 		index++;
+	}
+
+	if (check_neg < 0)
+	{
+		total_count += 1;
 	}
 	return (total_count);
 
