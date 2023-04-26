@@ -48,6 +48,12 @@ int buffer_count_retr(va_list print_spec, char forms)
 
 	if (forms == 0)
 	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
 		return (0);
 	}
 	if (!strchr(spec_list, forms))
