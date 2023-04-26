@@ -24,13 +24,14 @@ int buf_integer(int n, int count)
 /**
  * _pow - calculated the power of a base to a given exponent
  * @base: base number
- * @exp: exponent
+ * @xp: exponent
  *
  * Return: calculated power
  */
 int _pow(int base, int xp)
 {
 	int base_pow = base;
+
 	if (xp == 0)
 	{
 		return (1);
