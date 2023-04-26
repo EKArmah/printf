@@ -29,6 +29,7 @@ int print_char(va_list arg);
 int print_mod(va_list arg);
 int print_int(va_list arg);
 int print_NULL(va_list arg);
+int print_unsigned_int(va_list arg);
 int buf_integer(int n, int count);
 int buffer_count_retr(va_list print_spec, char forms);
 

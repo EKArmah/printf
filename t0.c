@@ -17,9 +17,10 @@ int (*get_app_type_print(char frms))(va_list print_spec)
 		{"s", print_str},
 		{"%", print_mod},
 		{"d", print_int},
-		{"i", print_int}};
+		{"i", print_int},
+		{"u", print_unsigned_int}};
 
-	while (type_count < 5)
+	while (type_count < 6)
 	{
 		temp = type_ls[type_count].frm;
 
@@ -44,7 +45,7 @@ int (*get_app_type_print(char frms))(va_list print_spec)
 int buffer_count_retr(va_list print_spec, char forms)
 {
 	int str_count = 0;
-	char *spec_list = "csid%";
+	char *spec_list = "csidu%";
 
 	if (forms == 0)
 	{
