@@ -89,6 +89,10 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
+			if (format[counter + 1] == '\0')
+			{
+				return (-1);
+			}
 			final_counter += buffer_count_retr(print_specs, format[counter += 1]);
 			counter++;
 		}
