@@ -48,12 +48,6 @@ int buffer_count_retr(va_list print_spec, char forms)
 
 	if (forms == 0)
 	{
-		_putchar('(');
-		_putchar('n');
-		_putchar('u');
-		_putchar('l');
-		_putchar('l');
-		_putchar(')');
 		return (0);
 	}
 	if (!strchr(spec_list, forms))
@@ -101,7 +95,7 @@ int _printf(const char *format, ...)
 
 	}
 	va_end(print_specs);
-	printf("Total num of chars printed: %d\n", final_counter);
+	/*printf("Total num of chars printed: %d\n", final_counter);*/
 	return (final_counter);
 }
 
