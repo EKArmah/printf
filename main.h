@@ -21,6 +21,7 @@ typedef struct form
 	int (*f)(va_list);
 } get_type;
 
+int _putchar(char c);
 int _pow(int base, int xp);
 int _printf(const char *format, ...);
 int print_str(va_list arg);

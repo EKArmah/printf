@@ -14,7 +14,7 @@ int print_char(va_list arg)
 
 	curr_char = va_arg(arg, int);
 
-	putchar(curr_char);
+	_putchar(curr_char);
 	return (count);
 }
 
@@ -36,14 +36,14 @@ int print_str(va_list arg)
 		temp_str = "(null)";
 		while (temp_str[count] != '\0')
 		{
-			putchar(temp_str[count]);
+			_putchar(temp_str[count]);
 			count++;
 		}
 		return (0);
 	}
 	while (temp_str[count] != '\0')
 	{
-		putchar(temp_str[count]);
+		_putchar(temp_str[count]);
 		count++;
 	}
 	return (count);
@@ -58,7 +58,7 @@ int print_str(va_list arg)
 
 int print_mod(__attribute__((unused)) va_list arg)
 {
-	putchar('%');
+	_putchar('%');
 	return (1);
 }
 
@@ -77,7 +77,7 @@ int print_NULL(__attribute__((unused)) va_list arg)
 	printf("NULL case met");
 	while (temp[count] != '\0')
 	{
-		putchar(temp[count]);
+		_putchar(temp[count]);
 	}
 	return (0);
 }

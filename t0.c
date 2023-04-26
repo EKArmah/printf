@@ -59,8 +59,8 @@ int buffer_count_retr(va_list print_spec, char forms)
 	}
 	if (!strchr(spec_list, forms))
 	{
-		putchar('%');
-		putchar(forms);
+		_putchar('%');
+		_putchar(forms);
 		return (2);
 	}
 	str_count = get_app_type_print(forms)(print_spec);
@@ -90,20 +90,17 @@ int _printf(const char *format, ...)
 	{
 		if (format[counter] != '%')
 		{
-			putchar(format[counter]);
+			_putchar(format[counter]);
 			final_counter++;
 			counter++;
 		}
 		else
 		{
 			final_counter += buffer_count_retr(print_specs, format[counter += 1]);
-			/*printf("Current final count: %d\n", final_counter);*/
 			counter++;
 		}
 
 	}
-
-	/*printf("Final count: %d\n", final_counter);*/
 	va_end(print_specs);
 	return (final_counter);
 }
