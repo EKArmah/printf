@@ -18,9 +18,9 @@ int main(void)
     ui = (unsigned int)INT_MAX + 1024;
     /*addr = (void *)0x7ffe637541f0;*/
     /*_printf("Length:[%d, %i]\n", len, len);*/
-    _printf("Length:[%d, %i]\n", len2, len2);
-    _printf("Negative:[%d]\n", -762534);
-    printf("Negative:[%d]\n", -762534);
+    _printf("Length:[%d, %i]\n", INT_MIN, INT_MAX);
+    _printf("Negative:[%d]\n", len2 * -1);
+    printf("Negative:[%d]\nPositive:[%i]\n", INT_MIN, INT_MAX);
     _printf("Unsigned:[%u]\n", ui);
     _printf("Unsigned:[%u]\n", ui);
     /*_printf("Unsigned octal:[%o]\n", ui);

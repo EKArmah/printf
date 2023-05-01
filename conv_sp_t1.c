@@ -17,7 +17,10 @@ int print_int(va_list arg)
 	if (temp < 0)
 	{
 		_putchar('-');
-		temp = -1 * temp;
+		if (temp == INT_MIN)
+		{
+			temp = INT_MAX;
+		}
 	}
 	total_count = buf_integer(temp, 0);
 
