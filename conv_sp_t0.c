@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_char - prints a char
- * @arg: va_list to retrieve char
+ * print_char : prints a char
+ * @arg: va_list to get char
  *
- * Return: num of chars printed; invariably one
+ * Return: the number of chars printed
  */
 
 int print_char(va_list arg)
@@ -20,9 +20,9 @@ int print_char(va_list arg)
 
 /**
  * print_str - prints a string
- * @arg: va_list to retrieve str
+ * @arg: va_list to get string
  *
- * Return: num of chars in str
+ * Return: number of chars in string
  */
 
 int print_str(va_list arg)
@@ -50,10 +50,10 @@ int print_str(va_list arg)
 }
 
 /**
- * print_mod - prints mod sign
- * @arg: va_list to retrieve mod sign
+ * print_mod - prints mod sign %
+ * @arg: va_list to get mod sign
  *
- * Return: num of signs, ideally 1
+ * Return: number of signs, ideally 1
  */
 
 int print_mod(__attribute__((unused)) va_list arg)
@@ -63,7 +63,7 @@ int print_mod(__attribute__((unused)) va_list arg)
 }
 
 /**
- * print_NULL - prints (null) when a NULL pointer is passed in var list
+ * print_NULL - prints (null) whenever a NULL pointer is passed into var list
  * @arg: va list
  *
  * Return: 0

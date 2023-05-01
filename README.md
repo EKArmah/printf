@@ -1,1 +1,2 @@
-Creating a replica printf function
+code that works same as the print f
+

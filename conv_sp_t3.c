@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_unsigned_int - prints an unsigned int
+ * print_unsigned_int - prints an unsigned integer
  * @arg: va_list
  *
- * Return: num of digits in int
+ * Return: num of digits in integer
  */
 
 int print_unsigned_int(va_list arg)

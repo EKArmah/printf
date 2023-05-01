@@ -1,1 +1,1 @@
-Considering possible scenarios for printf function
+Possible senerios for the print f functio

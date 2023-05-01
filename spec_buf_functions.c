@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * buf_integer - helper function for print_int
+ * buf_integer: function that helps print_int
  * @n: current int or dec
  * @count: num of digits in n
  *
@@ -22,7 +22,7 @@ int buf_integer(int n, int count)
 }
 
 /**
- * _pow - calculated the power of a base to a given exponent
+ * _pow - calculates power of a base to a given exponent
  * @base: base number
  * @xp: exponent
  *
